@@ -13,12 +13,19 @@ export function sub() {
 export function addNumber(number) {
     return {
         type: ADD_NUMBER,
-        payloader: number
+        payload: number
+    }
+}
+export function asyncAdd(number) {
+    return (dispatch) => {
+        setTimeout(() => {
+            dispatch(addNumber(number))
+        }, 2000);
     }
 }
 export function add2(number) {
     return {
         type: ADD2,
-        payloader: number
+        payload: number
     }
 }
