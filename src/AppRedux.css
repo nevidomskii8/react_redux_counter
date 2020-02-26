@@ -1,0 +1,16 @@
+.AppRedux {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Actions {
+    display: flex;
+    margin: 0 auto;
+}
+.Actions button {
+    display: inline;
+    margin: 0 20px 20px 0;
+    border-radius: 10px;
+}
+/* .Actions button:focus {
+} */
